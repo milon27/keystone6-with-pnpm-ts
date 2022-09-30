@@ -17,9 +17,8 @@ pnpm i @keystone-6/fields-document
 ```
 
 ## project setup
-1. create few scripts in package.json file
+- create few scripts in **package.json** file
 ```json
-// package.json
 {
   "name": "key_blog",
   "version": "1.0.0",
@@ -47,9 +46,8 @@ pnpm i @keystone-6/fields-document
 
 ```
 
-1. create tsconfig file
+- create **tsconfig.json** file
 ```json
-// tsconfig.json
 {
     "compilerOptions": {
         "target": "esnext",
@@ -62,14 +60,14 @@ pnpm i @keystone-6/fields-document
 }
 ```
 
-1. create a file called .env
+- create a file called **.env**
 ```bash
 DB_URL="mysql://root@localhost/keystone"
 ```
 
-1. create a file called keystone.ts 
-1. connect database from .env
-1. create a user list
+- create a file called **keystone.ts**
+- connect database from **.env**
+- create a user list
 ```ts
 import { config as envConfig } from 'dotenv'
 import { config, list } from '@keystone-6/core'
@@ -93,7 +91,7 @@ export default config({
 });
 ```
 
-1. run the project in dev mode
+- run the project in **dev mode**
 ```bash
 npm run dev
 ```
